@@ -179,3 +179,62 @@ footer a:hover {
         padding: 60px 30px;
     }
 }
+#realisations {
+    position: relative;
+    padding: 80px 50px;
+}
+
+#realisations .carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#realisations .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#realisations .carousel-item {
+    min-width: 100%;
+    height: auto;
+}
+
+#realisations .carousel-indicators {
+    position: absolute;
+    bottom: -30px; /* Déplace les indicateurs sous les images */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#realisations .carousel-indicator {
+    width: 8px; /* Réduire la taille des points */
+    height: 8px; /* Réduire la taille des points */
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0 4px; /* Ajuster l'espacement entre les points */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#realisations .carousel-indicator.active {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Ajouter un peu d'espace sous le carrousel pour les indicateurs */
+#realisations .carousel-container {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    #realisations {
+        padding: 60px 30px;
+    }
+}
