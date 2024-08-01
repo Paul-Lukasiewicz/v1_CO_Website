@@ -1,29 +1,44 @@
+html {
+    scroll-padding-top: 80px; /* Ajustez cette valeur selon la hauteur de votre header */
+}
+
+.section {
+    padding: 80px 50px;
+    background: #fff;
+    scroll-margin-top: 80px; /* Ajoutez cette ligne */
+}
+
+
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    color: #000;
+    color: #333;
     background: #f4f4f4;
+    line-height: 1.6;
 }
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
     background: #fff;
-    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: calc(100% - 100px); /* Modification ici */
+    top: 0;
+    z-index: 1000;
 }
-header .logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-}
-header nav a:hover {
-    color: #000;
+
+/* ... (le reste du CSS reste inchangé) ... */
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+        width: calc(100% - 60px); /* Ajout pour la version mobile */
+    }
+    
+    /* ... (autres règles media query restent inchangées) ... */
 }
 
 .logo-container {
@@ -39,8 +54,32 @@ header nav a:hover {
 .logo-text {
     font-size: 24px;
     font-weight: bold;
-    color: #333333;
+    color: #333;
 }
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #000;
+}
+
+header nav .cta {
+    padding: 8px 16px;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+header nav .cta:hover {
+    background: #000;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -48,36 +87,95 @@ header nav a:hover {
     height: 100vh;
     background: linear-gradient(120deg, #e0e0e0, #f9f9f9);
     text-align: center;
+    padding-top: 80px;
 }
+
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #333;
 }
+
 .hero .cta {
-    padding: 10px 20px;
+    padding: 12px 24px;
     background: #333;
     color: #fff;
     text-decoration: none;
     transition: background 0.3s;
+    border-radius: 4px;
+    font-size: 18px;
 }
+
 .hero .cta:hover {
     background: #000;
 }
+
 .section {
-    padding: 50px;
+    padding: 80px 50px;
     background: #fff;
 }
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-wrapper.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content, .image-content {
+    flex: 1;
+    padding: 20px;
+}
+
 .section h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #333;
 }
+
 .section p {
     font-size: 18px;
     line-height: 1.6;
+    color: #666;
 }
+
+.image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
 footer {
     text-align: center;
-    padding: 20px;
-    background: #fff;
-    border-top: 1px solid #ddd;
+    padding: 30px 20px;
+    background: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper, .content-wrapper.reverse {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 60px 30px;
+    }
 }
