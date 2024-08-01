@@ -3,50 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez Claire Obscur pour en savoir plus sur nos solutions d'IA.">
-    <title>Claire Obscur - Contact</title>
+    <title>Clair Obscur</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Claire Obscur</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="contact">
-            <h1>Contactez-nous</h1>
-            <p>Pour toute question ou demande d'information, veuillez remplir le formulaire ci-dessous :</p>
-            <form action="submit_form.php" method="post" id="contact-form">
-                <label for="name">Nom</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Envoyer</button>
-            </form>
-            <div class="contact-info">
-                <h2>Nos coordonnées</h2>
-                <p>Email : contact@claireobscur.com</p>
-                <p>Téléphone : +33 1 23 45 67 89</p>
-                <p>Adresse : 123 Rue de l'Innovation, 75000 Paris, France</p>
-            </div>
-            <div id="map">
-                <!-- Intégration Google Maps -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.990252049268!2d2.2922928156752744!3d48.85884407928706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f01f1b65e85%3A0xf9e4c6edc1c2a88a!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1614075817898!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Claire Obscur. Tous droits réservés.</p>
-    </footer>
+
+<header>
+   <div class="logo-container">
+                <img src="logo.png" alt="Claire Obscur Logo" class="logo-img">
+                <div class="logo-text">Clair Obscur</div>
+    </div>
+    <nav>
+        <a href="index.html#hero">Accueil</a>
+        <a href="index.html#about">Qui nous sommes</a>
+        <a href="index.html#method">Notre méthode</a>
+        <a href="contact.html" class='cta'>Contact</a>
+    </nav>
+</header>
+
+<div class="hero" id="hero">
+    <div>
+       Formulaire
+    </div>
+</div>
+
+<footer>
+    <p>Claire Obscur - Adresse, téléphone, email</p>
+    <p>Suivez-nous sur les réseaux sociaux</p>
+</footer>
+
 </body>
-</html>
