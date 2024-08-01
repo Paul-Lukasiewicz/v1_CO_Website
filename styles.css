@@ -1,15 +1,19 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 header {
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
     padding: 10px 0;
 }
 
@@ -21,9 +25,20 @@ nav {
     margin: 0 auto;
 }
 
-.logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
     font-size: 24px;
     font-weight: bold;
+    color: #333333;
 }
 
 .nav-links {
@@ -36,9 +51,16 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #333333;
     text-decoration: none;
     font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
 }
 
 main {
@@ -49,53 +71,69 @@ main {
 .hero {
     text-align: center;
     padding: 50px 0;
-    background-color: #000;
-    color: #fff;
+    background-color: #f9f9f9;
+    color: #333333;
 }
 
 .hero h1 {
-    margin: 0;
+    margin-bottom: 20px;
     font-size: 36px;
 }
 
 .hero p {
-    margin: 10px 0 20px;
+    margin-bottom: 20px;
     font-size: 18px;
+    line-height: 1.6;
 }
 
 .cta {
     padding: 10px 20px;
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.about, .solutions, .testimonials, .contact {
+.cta:hover {
+    background-color: #0056b3;
+}
+
+section {
     margin: 40px 0;
 }
 
-.solutions, .testimonials {
-    background-color: #fff;
+h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333333;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.solutions, .testimonials, .contact {
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.solution {
-    margin: 20px 0;
-}
-
-.testimonial {
+.solution, .testimonial {
     margin: 20px 0;
 }
 
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #f9f9f9;
+    color: #333333;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+    border-top: 1px solid #dddddd;
 }
 
 .contact form {
@@ -105,27 +143,37 @@ footer {
 
 .contact form label {
     margin-top: 10px;
+    font-size: 14px;
+    color: #333333;
 }
 
 .contact form input, .contact form textarea {
     padding: 10px;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 5px;
+    font-size: 16px;
+    color: #333333;
 }
 
 .contact form button {
     padding: 10px 20px;
     background-color: #007BFF;
-    color: #fff;
+    color: #ffffff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
 }
 
 .contact-info {
     margin-top: 20px;
+    color: #333333;
 }
 
 #map {
