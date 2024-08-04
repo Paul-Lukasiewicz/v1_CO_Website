@@ -41,7 +41,7 @@ header nav a[href="contact.html"]:hover {
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
 }
 
-/* Style général pour les boutons CTA */
+
 .cta-button {
     display: inline-block;
     padding: 12px 24px;
@@ -60,19 +60,17 @@ header nav a[href="contact.html"]:hover {
     transform: translateY(-2px);
 }
 
-/* Ajustements pour les sections existantes */
+
 .section {
-    /* ... styles existants ... */
     position: relative;
-    padding-bottom: 40px; /* Réduit l'espace en bas */
+    padding-bottom: 40px; 
 }
 
 .content-wrapper {
-    /* ... styles existants ... */
-    margin-bottom: 0; /* Supprime la marge en bas */
+    margin-bottom: 0; 
 }
 
-/* Positionnement du bouton CTA dans chaque section */
+
 .section .cta-button {
     position: static; /* Change de absolute à static */
     display: inline-block;
