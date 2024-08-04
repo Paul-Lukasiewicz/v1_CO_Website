@@ -39,6 +39,33 @@ header nav a[href="contact.html"]:hover {
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
 }
 
+.menu-toggle {
+    display: none; /* Caché par défaut */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
 
 .cta-button {
     display: inline-block;
@@ -124,10 +151,31 @@ header nav a[href="contact.html"]:hover {
     transition: all 0.3s ease;
 }
 
+.mobile-contact-button {
+    display: none; /* Caché par défaut */
+    padding: 8px 16px;
+    background: linear-gradient(to right, #4a4a4a, #707070);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.mobile-contact-button:hover {
+    background: linear-gradient(to right, #707070, #4a4a4a);
+    color: white;
+    box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
+}
+
 @media (max-width: 768px) {
     header {
         padding: 20px 30px;
         width: calc(100% - 60px);
+    }
+
+    .mobile-contact-button {
+        display: inline-block;
     }
 
     .menu-toggle {
@@ -151,15 +199,19 @@ header nav a[href="contact.html"]:hover {
     }
 
     nav {
+        display: flex;
         flex-direction: column;
         padding: 20px;
     }
 
     nav a {
         margin: 10px 0;
+        text-align: left;
+        width: 100%;
+        display: block;
     }
-}
 
+}
 
 body {
     margin: 0;
@@ -181,10 +233,6 @@ body {
     /* ... (autres règles media query restent inchangées) ... */
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-}
 
 .logo-img {
     height: 40px;
