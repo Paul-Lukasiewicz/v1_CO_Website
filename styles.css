@@ -298,6 +298,13 @@ header nav .cta:hover {
     background: #000;
 }
 
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
 .section {
     padding: 80px 50px;
     background: #fff;
@@ -337,6 +344,8 @@ header nav .cta:hover {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
+
+
 
 footer {
     text-align: center;
