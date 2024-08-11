@@ -48,9 +48,9 @@ document.addEventListener('DOMContentLoaded', function() {
     rightArrow.addEventListener('click', nextSlide);
 
     // Défilement automatique
-    let interval = setInterval(nextSlide, 5000); // Change d'image toutes les 5 secondes
+    let interval = setInterval(nextSlide, 10000); // Change d'image toutes les 10 secondes
 
     // Arrêter le défilement automatique lors du survol
     carousel.addEventListener('mouseenter', () => clearInterval(interval));
-    carousel.addEventListener('mouseleave', () => interval = setInterval(nextSlide, 5000));
+    carousel.addEventListener('mouseleave', () => interval = setInterval(nextSlide, 10000));
 });
