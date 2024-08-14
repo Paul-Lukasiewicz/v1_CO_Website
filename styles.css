@@ -2,12 +2,6 @@ html {
     scroll-padding-top: 80px; /* Ajustez cette valeur selon la hauteur de votre header */
 }
 
-.section {
-    padding: 80px 50px;
-    background: #fff;
-    scroll-margin-top: 80px; /* Ajoutez cette ligne */
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -28,13 +22,13 @@ header nav a[href="contact.html"] {
     border: 2px solid transparent;
     border-radius: 4px;
     transition: all 0.3s ease;
-    background: linear-gradient(to right, #4a4a4a, #707070);
+    background: #14213D;
     color: white;
     font-weight: bold;
 }
 
 header nav a[href="contact.html"]:hover {
-    background: linear-gradient(to right, #707070, #4a4a4a);
+    background: #FCA311;
     color: white;
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
 }
@@ -50,7 +44,7 @@ header nav a[href="contact.html"]:hover {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #14213D;
     margin: 5px 0;
     transition: all 0.3s ease;
 }
@@ -70,7 +64,7 @@ header nav a[href="contact.html"]:hover {
 .cta-button {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(to right, #4a4a4a, #707070);
+    background: #14213D;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -80,21 +74,19 @@ header nav a[href="contact.html"]:hover {
 }
 
 .cta-button:hover {
-    background: linear-gradient(to right, #707070, #4a4a4a);
+    background: #FCA311;
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
     transform: translateY(-2px);
 }
 
 
 .section {
+    padding: 80px 50px;
+    background: #fff;
+    scroll-margin-top: 80px; /* Ajoutez cette ligne */
     position: relative;
     padding-bottom: 40px; 
 }
-
-.content-wrapper {
-    margin-bottom: 0; 
-}
-
 
 .section .cta-button {
     position: static; /* Change de absolute à static */
@@ -103,6 +95,13 @@ header nav a[href="contact.html"]:hover {
     margin-left: 0; /* Aligne avec le texte */
     transform: none; /* Supprime la transformation */
 }
+
+.content-wrapper {
+    margin-bottom: 0; 
+}
+
+
+
 
 /* Ajustements pour la section des réalisations */
 #realisations {
@@ -146,7 +145,7 @@ header nav a[href="contact.html"]:hover {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #333;
+    background-color: #14213D;
     margin: 5px 0;
     transition: all 0.3s ease;
 }
@@ -154,7 +153,7 @@ header nav a[href="contact.html"]:hover {
 .mobile-contact-button {
     display: none; /* Caché par défaut */
     padding: 8px 16px;
-    background: linear-gradient(to right, #4a4a4a, #707070);
+    background: #14213D;
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -163,7 +162,7 @@ header nav a[href="contact.html"]:hover {
 }
 
 .mobile-contact-button:hover {
-    background: linear-gradient(to right, #707070, #4a4a4a);
+    background: #FCA311;
     color: white;
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
 }
@@ -216,9 +215,9 @@ header nav a[href="contact.html"]:hover {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: #333;
-    background: #f4f4f4;
+    font-family: 'Raleway';
+    color: #14213D;
+    background: #fff;
     line-height: 1.6;
 }
 
@@ -243,7 +242,68 @@ body {
 .logo-text {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #14213D;
+}
+.testimonials-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.testimonial-content {
+  flex: 1;
+}
+
+.quote {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .testimonial {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .testimonial {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial {
+    flex-basis: 100%;
+  }
 }
 
 header nav a {
@@ -272,22 +332,28 @@ header nav .cta:hover {
 .hero {
     display: flex;
     align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background: linear-gradient(120deg, #e0e0e0, #f9f9f9);
+    background: #fff;
     text-align: center;
-    padding-top: 80px;
 }
+
+
 
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: #333;
+    color: #14213D;
 }
-
+#yellow_highlight {
+    color: #FCA311;
+}
 .hero .cta {
     padding: 12px 24px;
-    background: #333;
+    background: #14213D;
     color: #fff;
     text-decoration: none;
     transition: background 0.3s;
@@ -302,7 +368,7 @@ header nav .cta:hover {
 .hero-description {
     font-size: 18px;
     line-height: 1.6;
-    color: #666;
+    color: #000;
     margin-bottom: 30px;
 }
 
@@ -330,28 +396,30 @@ header nav .cta:hover {
 .section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #333;
+    color: #14213D;
 }
 
 .section p {
     font-size: 18px;
     line-height: 1.6;
-    color: #666;
+    color: #000;
 }
 
 .image-content img {
     width: 100%;
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.sub-hero {
+    text-align: center;
+}
 
 
 footer {
     text-align: center;
     padding: 30px 20px;
-    background: #333;
+    background: #14213D;
     color: #fff;
 }
 
@@ -391,18 +459,18 @@ footer a:hover {
     padding-bottom: 20px;
 }
 
-       .case-study-image {
-            flex: 1;
-            background-color: #4a4a4a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .case-study-image img {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-        }
+.case-study-image {
+    flex: 1;
+    background-color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.case-study-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
 
 .carousel-container {
     position: relative;
