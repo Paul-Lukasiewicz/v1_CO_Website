@@ -33,6 +33,64 @@ header nav a[href="contact.html"]:hover {
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
 }
 
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #000;
+}
+
+header nav .cta {
+    padding: 8px 16px;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+header nav .cta:hover {
+    background: #000;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway';
+    color: #14213D;
+    background: #fff;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #14213D;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #14213D;
+}
+
 .menu-toggle {
     display: none; /* Caché par défaut */
     background: none;
@@ -80,6 +138,51 @@ header nav a[href="contact.html"]:hover {
 }
 
 
+.hero {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: #fff;
+    text-align: center;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #14213D;
+}
+
+#yellow_highlight {
+    color: #FCA311;
+}
+
+.hero .cta {
+    padding: 12px 24px;
+    background: #14213D;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.hero .cta:hover {
+    background: #000;
+}
+
+.hero-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+
 .section {
     padding: 80px 50px;
     background: #fff;
@@ -101,8 +204,6 @@ header nav a[href="contact.html"]:hover {
 }
 
 
-
-
 /* Ajustements pour la section des réalisations */
 #realisations {
     padding-bottom: 60px; /* Ajuste l'espace en bas */
@@ -112,22 +213,6 @@ header nav a[href="contact.html"]:hover {
     margin-top: 30px; /* Ajoute de l'espace au-dessus du bouton */
 }
 
-/* Styles responsives */
-@media (max-width: 768px) {
-    .section {
-        padding-bottom: 60px; /* Ajuste l'espace en bas pour mobile */
-    }
-
-    .section .cta-button {
-        display: inline-block;
-        width: auto; /* Permet au bouton de s'ajuster à son contenu */
-        margin: 20px 0 0; /* Ajoute de l'espace au-dessus du bouton */
-        text-align: center;
-    }
-}
-
-
-/* ... Autres styles existants ... */
 
 .nav-container {
     display: flex;
@@ -167,83 +252,6 @@ header nav a[href="contact.html"]:hover {
     box-shadow: 0 0 10px rgba(74, 74, 74, 0.5);
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 20px 30px;
-        width: calc(100% - 60px);
-    }
-
-    .mobile-contact-button {
-        display: inline-block;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-container {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: #fff;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-    }
-
-    .nav-container.active {
-        max-height: 300px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    nav a {
-        margin: 10px 0;
-        text-align: left;
-        width: 100%;
-        display: block;
-    }
-
-}
-
-
-body {
-    margin: 0;
-    font-family: 'Raleway';
-    color: #14213D;
-    background: #fff;
-    line-height: 1.6;
-}
-
-
-/* ... (le reste du CSS reste inchangé) ... */
-
-@media (max-width: 768px) {
-    header {
-        padding: 20px 30px;
-        width: calc(100% - 60px); /* Ajout pour la version mobile */
-    }
-    
-    /* ... (autres règles media query restent inchangées) ... */
-}
-
-
-.logo-img {
-    height: 40px;
-    margin-right: 10px;
-}
-
-.logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #14213D;
-}
 .testimonials-container {
   display: flex;
   max-width: 1200px;
@@ -280,98 +288,6 @@ body {
   margin: 0;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-  .testimonial {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .avatar {
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .testimonial {
-    flex-basis: calc(50% - 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .testimonial {
-    flex-basis: 100%;
-  }
-}
-
-header nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #333;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #000;
-}
-
-header nav .cta {
-    padding: 8px 16px;
-    background: #333;
-    color: #fff;
-    border-radius: 4px;
-    transition: background 0.3s;
-}
-
-header nav .cta:hover {
-    background: #000;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    background: #fff;
-    text-align: center;
-}
-
-
-
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #14213D;
-}
-#yellow_highlight {
-    color: #FCA311;
-}
-.hero .cta {
-    padding: 12px 24px;
-    background: #14213D;
-    color: #fff;
-    text-decoration: none;
-    transition: background 0.3s;
-    border-radius: 4px;
-    font-size: 18px;
-}
-
-.hero .cta:hover {
-    background: #000;
-}
-
-.hero-description {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #000;
-    margin-bottom: 30px;
-}
-
 .section {
     padding: 80px 50px;
     background: #fff;
@@ -379,11 +295,14 @@ header nav .cta:hover {
 
 .content-wrapper {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.content-wrapper#agents{
+    align-items: center;
+}
 .content-wrapper.reverse {
     flex-direction: row-reverse;
 }
@@ -411,40 +330,47 @@ header nav .cta:hover {
     border-radius: 8px;
 }
 
+.method-section {
+  
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.method-step {
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 50%);
+  border-radius: 10px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.method-step:hover {
+  transform: translateY(-10px);
+}
+
+.method-step i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+
 .sub-hero {
     text-align: center;
 }
 
 
-footer {
-    text-align: center;
-    padding: 30px 20px;
-    background: #14213D;
-    color: #fff;
-}
-
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .content-wrapper, .content-wrapper.reverse {
-        flex-direction: column;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .section {
-        padding: 60px 30px;
-    }
-}
 #realisations {
     position: relative;
     padding: 80px 50px;
@@ -493,16 +419,6 @@ footer a:hover {
     object-position: center; /* Centre l'image */
 }
 
-/* Media query pour les écrans plus petits */
-@media (max-width: 768px) {
-    .carousel-container {
-        max-width: 100%; /* Utilise toute la largeur sur les petits écrans */
-    }
-    
-    .carousel-item {
-        max-height: none; /* Supprime la limite de hauteur sur mobile */
-    }
-}
 
 /* Optionnel : Ajoutez un fond pour les espaces vides autour des images */
 .carousel {
@@ -557,6 +473,18 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+
+    .content-wrapper, .content-wrapper.reverse {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 60px 30px;
+    }
     #realisations {
         padding: 60px 30px;
     }
@@ -565,4 +493,121 @@ footer a:hover {
         padding: 5px 10px;
         font-size: 16px;
     }
+
+    header {
+        padding: 20px 30px;
+        width: calc(100% - 60px);
+    }
+    .section {
+        padding-bottom: 60px; /* Ajuste l'espace en bas pour mobile */
+    }
+
+    .section .cta-button {
+        display: inline-block;
+        width: auto; /* Permet au bouton de s'ajuster à son contenu */
+        margin: 20px 0 0; /* Ajoute de l'espace au-dessus du bouton */
+        text-align: center;
+    }
+
+    .mobile-contact-button {
+        display: inline-block;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .nav-container.active {
+        max-height: 300px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 10px 0;
+        text-align: left;
+        width: 100%;
+        display: block;
+    }
+
+    header {
+        padding: 20px 30px;
+        width: calc(100% - 60px); /* Ajout pour la version mobile */
+    }
+
+    .testimonial {
+    flex-direction: column;
+    text-align: center;
+    flex-basis: calc(50% - 20px);
+  }
+  
+  
+    .avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+    .carousel-container {
+        max-width: 100%; /* Utilise toute la largeur sur les petits écrans */
+    }
+    
+    .carousel-item {
+        max-height: none; /* Supprime la limite de hauteur sur mobile */
+    }
+      .method-section {
+    padding: 3rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .method-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .method-step {
+    padding: 1.5rem;
+  }
+
+  .method-step i {
+    font-size: 2.5rem;
+  }
+
+
+    
+}
+
+@media (max-width: 480px) {
+  .testimonial {
+    flex-basis: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .method-section {
+    padding: 2rem 1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+
 }
