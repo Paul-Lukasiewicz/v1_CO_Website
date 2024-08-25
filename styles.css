@@ -589,8 +589,16 @@ footer a:hover {
   .method-step i {
     font-size: 2.5rem;
   }
+  .testimonials-container {
+  	flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
-
+.image-content{
+	display: none;
+}
     
 }
 
