@@ -430,6 +430,7 @@ footer a:hover {
 }
 
 .carousel-arrow {
+	display: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -521,6 +522,8 @@ footer a:hover {
         display: block;
     }
 
+    
+
     .nav-container {
         position: absolute;
         top: 100%;
@@ -600,7 +603,10 @@ footer a:hover {
     padding: 20px;
 }
 
-.image-content{
+.image-content img{
+	display: none;
+}
+.image-content video{
 	display: none;
 }
     
@@ -622,4 +628,86 @@ footer a:hover {
   }
 
 
+}
+
+/* Styles pour le carousel modifié */
+.case-study-box {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.case-study-box:hover {
+    transform: translateY(-5px);
+}
+
+.case-study-box h3 {
+    color: #14213D;
+    margin-bottom: 10px;
+}
+
+.case-study-box p {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.case-study-link {
+    display: inline-block;
+    color: #FCA311;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.carousel-item {
+	text-align: center;
+    text-decoration: none;
+}
+
+/* Styles pour la section "Contactez-nous" */
+.contact-us-section {
+    background-color: #14213D;
+    border: 2px solid #14213D;
+    border-radius: 50px;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.contact-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-us-content h2 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-us-content p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.contact-us-section .cta-button{
+	background-color: #FCA311;
+}
+
+/* Ajustement pour les écrans mobiles */
+@media (max-width: 768px) {
+    .contact-us-section {
+        padding: 30px 20px;
+    }
+
+    .contact-us-content h2 {
+        font-size: 28px;
+    }
+
+    .contact-us-content p {
+        font-size: 16px;
+    }
 }
